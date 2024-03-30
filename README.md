@@ -108,7 +108,7 @@ It's been used to compile **{ C , Rust , Python , Solidity , Zokrates }** to **{
 
 ## **[CIRCIFY](#circify)**
 
-Circify is a compiler infrastructure which compile high level language **{c , zokrates}** to **{R1CS , SMT , ILP}**.
+Circify is a compiler infrastructure which compiles high level language **{c , zokrates}** to **{R1CS , SMT , ILP}**.
 
 - First of all it was converting high level language 
 to **CIRC-IR**  using frontend which will be obtained in form of **EQC(Existentially Qualified Circuit)** .
