@@ -108,7 +108,7 @@ It's been used to compile **{ C , Rust , Python , Solidity , Zokrates }** to **{
 
 ## **[CIRCIFY](#circify)**
 
-Circify is a complier  infrastructure which complie high level language **{c , zokrates}** to **{R1CS , SMT , ILP}**.
+Circify is a compiler infrastructure which compiles high level language **{c , zokrates}** to **{R1CS , SMT , ILP}**.
 
 - First of all it was converting high level language 
 to **CIRC-IR**  using frontend which will be obtained in form of **EQC(Existentially Qualified Circuit)** .
@@ -126,8 +126,8 @@ Z comp support **{Rust , Solidity , python , C , Zokrates}** language.
 
 ### **[Frontend](#frontend)**
  
- - at the beginning we will give source code in these languages after going through frontend of complier it will convert source code in AST(Abstract syntax tree).
- * then after recursively visting all node  of AST it will convert source code into CIRC-IR.
+ - at the beginning we will give source code in these languages after going through frontend of compiler it will convert source code in AST(Abstract syntax tree).
+ * then after recursively visiting all node of AST it will convert source code into CIRC-IR.
  + this CIRC-IR is obtained in the form of EQC(Existentially Qualified Circuit) which is a hard problem because it was converting source code into circuit.
 
 
@@ -137,7 +137,7 @@ Z comp support **{Rust , Solidity , python , C , Zokrates}** language.
 - after getting CIRC-IR we will do target-specific optimizations to our IR to make it convertible to R1CS
 * then we will lower our optimized CIRC-IR to R1CS
 
-* after that we will optimze R1CS and export it into bellman and spartan to generate proof.
+* after that we will optimize R1CS and export it into bellman and spartan to generate proof.
 
-+  after converting it into Groth16 , we will prove our circuit with the help of source code , .vin file and .pin file .
++  after converting it into Groth16 ,we will prove our circuit with the help of source code , .vin file and .pin file.
  
