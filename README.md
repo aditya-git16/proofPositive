@@ -55,7 +55,7 @@ It's been used to compile **{ C , Rust , Python , Solidity , Zokrates }** to **{
     │   │   ├── opt
     │   │   ├── proof.rs
     │   │   └── term
-    ├── target(backend)
+    │   ├── target(backend)
     │   │   ├── mod.rs
     │   │   ├── r1cs
     │   │   │   ├── bellman.rs
